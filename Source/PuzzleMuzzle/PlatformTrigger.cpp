@@ -11,7 +11,8 @@ APlatformTrigger::APlatformTrigger()
 	PrimaryActorTick.bCanEverTick = true;
 
 	TriggerVolume = CreateDefaultSubobject<UBoxComponent>(FName("TriggerVolume"));
-	if(!ensure(TriggerVolume != nullptr)) return;
+	if (!ensure(TriggerVolume != nullptr))
+		return;
 	RootComponent = TriggerVolume;
 }
 
